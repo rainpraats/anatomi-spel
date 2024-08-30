@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+}
+
+/* animations */
+
+.pulse {
+    animation-name: color;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+
+@keyframes color {
+    to {
+        background-color: limegreen;
+    }
+}
+
+/* nav */
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #e1c699;
+    padding: 0% 1%;
+}
+
+nav > button {
+    font-size: 1em;
+    padding: 1em;
+    margin: 1%;
+}
+
+.drop-button {
+    font-size: 1em;
+    padding: 1em;
+    margin: 1%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content > button {
+    display: block;
+    font-size: 1em;
+    padding: 1em;
+    margin: 1%;
+    min-width: 92px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#score   {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1%;
+    font-size: 1em;
+}
+
+/* main */ 
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article {
+    flex: 50%;
+}
+
+/* picture */
+
+.human-body {
+    aspect-ratio: 0.41875/1;
+}
+
+.human-body img {
+    width: 100%;
+}
+
+.game-section {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#blank-names {
+    flex: 50%;
+    border: 2px solid black;
+    border-right: none;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#blank-names > div {
+    border-bottom: 2px solid black;
+    border-left: none;
+    padding-left: 4%;
+    min-height: 56px;
+    display: flex;
+}
+
+#blank-names > div > p {
+    min-width: 24px;
+    padding: 0 0 0 0.1em;
+}
+
+#latin-names {
+    flex: 50%;
+    border: 2px solid black;
+    padding: 5% 2%;
+    display: flex;
+    flex-flow: column nowrap; 
+}
+
+#search-box {
+    font-size: 16px;
+    padding: 0.6em;
+    margin-bottom: 7%;
+}
+
+#latin-names div {
+    border: 2px solid beige;
+    padding-left: 4%;
+}
+
+#latin-names div:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+
+/* muscle table */
+
+.muscle-table {
+    width: 100%;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: solid 4px #e1c699;
+}
+
+.muscle-titles, .muscle-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.muscle-titles {
+    position: sticky;
+    top: 82px;
+    background-color: white;
+}
+
+.muscle-titles > p {
+    flex: 25%;
+}
+
+.muscle-row > * {
+    flex: 25%;
+    border-right: solid 1px lightgray;
+}
+
+/* spec div */
+
+.spec-div > p, .title-div > p {
+    padding-left: 0.4em;
+}
+
+/* input score bar */
+
+.input-score-bar {
+    display: grid;
+    grid-template-columns: auto 48px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "input score"
+        "filter .";
+}
+
+.spec-input {
+    grid-area: input;
+    padding: 16px;
+}
+
+.filter-list-div {
+    grid-area: filter;
+    position: relative;
+}
+
+.filter-list {
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid black 1px;
+    border-top: none;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.filter-list > p {
+    margin: 0;
+    padding: 2px;
+    white-space: pre;
+}
+
+.filter-list > p:focus {
+    background-color: rgb(69, 170, 252);
+}
+
+.score-box {
+    grid-area: score;
+}
+
+.score-box > p {
+    text-align: center;
+}
+
+p.plus {
+    padding: 16px;
+    margin: 0px;
+    grid-area: input;
+}
+
+p.plus:hover {
+    background-color: #efefef;
+}
+
+/* action spec div elements */
+
+.action-div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "score"
+        "input"
+        "filter";
+}
+
+.title-div {
+    display: grid;
+    grid-template-columns: auto 48px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "name score"
+        "input ."
+        "filter .";
+}
+
+.title-div > p {
+    grid-area: name;
+}

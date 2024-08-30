@@ -1,0 +1,120 @@
+we need deep muscles, shallow muscles, skeleton and where muscles originate and attach.
+
+Learn how to import files because this is so big and a mess.
+
+const musclesObjectsArr = [
+    // the muscles should apear in the same order as they are listed in the picture.
+    {
+        name: "triceps brachii",
+        orgin: ["caput longum - tuberculum infraglenoidale scapulae", "caput mediale - os humerus baksida", "caput laterale - os humerus utsida"],
+        attachment: ["olecaron, ledkapseln i art cubiti"],
+        action: {"art humeri ( caput longum )": ["extention", "adduktion"], "art cubiti ( alla delar )": ["extention, spänner ledkapseln"]}, 
+
+    },
+    {
+        name: "erector spinae",
+        orgin: [
+            "os sacrum",
+            "crista iliaca",
+            "columna vertebralis",
+            "samtliga kotors processus spinosus", 
+            "samtliga kotors processus transversus",
+            "samtliga os costae",
+        ],   
+        attachment: [
+            "columna vertebralis", 
+            "samtliga kotors processus spinosus", 
+            "samtliga kotors processus transversus",
+            "samtliga os costae",
+            "linea nuchae superior till processus mastoideus",
+            "nackrosetten når linea nuchae inferior"
+        ],
+        action: {
+            "columna bilateralt": "extention",
+            "columna unilateralt": [
+                "lateralflexion", 
+                "ipsilateral rotation", 
+                "kontralateral roattion", 
+                "stabiliserar columna vertebralis"
+        ]},
+    },
+    {
+        name: "gluteus maximus",
+        orgin: [
+            "crista iliaca",
+            "os sacrum",
+            "os coccygis",
+            "lig sactoruberale",
+        ],
+        attachment: [
+            "tuberositas glutea",
+            "trochanter major",
+            "via tractus iliotibialis",
+            "condylus lateralis tibiae",
+        ],
+        action: {
+            "art coxae": [
+                "extension",
+                "utåtrotation",
+                "abduktion",
+                "adduktion",
+                "horisonal abduktion",
+            ],
+            "art genus": [
+                "aktiv stabilisation av lateralsidan",
+                "utåtrotation",
+            ],
+        },
+    },
+]
+
+HÄR ÄR ALLA GREJER FRÅN KUNSKAPSKRAVEN I PDF FILEN
+MUSKLER måste delas upp i bak, fram och djupa
+["Adduktorer långa", "Adduktorer korta", "Biceps Brachii", "Erector Spinae", "Extensorer i underarmen", "Flexorer i underarmen", "Gluteus Maximus", "Gluteus Medius/minimus", "Hamstrings", "Iliopsoas", "Infraspinatus", "Latissimus Dorsi", "Levator Scapulae", "Pectoralis major", "Pectoralis minor", "Quadratus Lumborum", "Rectus femoris", "Rhombodeii", "Supraspinatus", "Subscapularis", "Teres major", "Teres minor", "Tibialis anterior", "Trapezius", "Triceps Brachii", "Triceps Surae", "Utåtrotatorer", "Mm. Vastii", "Iliopsoas", "Latissimus Dorsi", "Pectoralis Major", "Pectoralis Minor", "Levator Scapulae", "Rhomboideii", "Trapezius", "Gluteus Maximus", "Gluteus Medius", "Hamstrings", "Quadriceps Femoris", "Tensor Fasciae Latae", "Tibialis Anterior", "Triceps Surae", "Sartorius", "Biceps Brachii", "Deltoideus", "Infraspinatus", "Subscapularis", "Supraspinatus", "Triceps Brachii", "Teres Minor", "Teres Major"]
+
+SKELLET/LIGAMENT
+['Costa XII', 'Crista iliaca', 'Incisura jugularis', 'Linea alba', 'Processus xiphoideus', 'Os mandibularis', 'Os zygomaticum', 'Processus mastoideus', 'Processus transversus C1', 'Processus spinosus C2', 'Processus spinosus C7', 'Linea nuchae superior', 'Protuberantia occipitalis externa', 'Processus coracoideus', 'Spina scapulae', 'Acromion', 'Fossa supraspinata', 'Fossa infraspinata', 'Margo medialis scapulae', 'Margo lateralis scapulae', 'Angulus superior scapulae', 'Angulus inferior scapulae', 'Tuberculum majus humeri', 'Tuberculum minus humeri', 'Sulcus intertubercularis', 'Tuberositas deltoidea', 'Epicondylus lateralis humeri', 'Epicondylus medialis humeri', 'Olecranon', 'Caput radii', 'Processus styloideus radii', 'Processus styloideus ulnae']
+
+FÄSTE
+['Caput fibulae', 'Condylus lateralis tibiae', 'Condylus medialis tibiae', 'Epicondylus lateralis femoris', 'Epicondylus medialis femoris', 'Lig collaterale laterale', 'Lig collaterale mediale', 'Lig iliotibialis', 'Lig patellae', 'Malleolus lateralis', 'Malleolus medialis', 'Pes anserinus', 'SIPS', 'SIAS', 'Trochanter major', 'Tuber calcanei', 'Tuber ischiadicum', 'Tuberositas tibiae']
+
+Vi har djupa muskler och muskler på ryggen.
+Vi behöver bilder på rygg och bilder på djupa muskler.
+
+arons prat
+bara massor av djupa muskler
+skriv om ordningen.
+En 3D bild vore bättre. Detta måste du testa att göra.
+Vad är ligament? tendons på engelska. Achillies tendon.
+
+Insikter
+C1 syns inte på sklettbilden. Kanske att vi tar en förtydligande bild och redigerar in den i sklettets sida.
+
+write and read this.
+muscle table {
+    triceps: {
+        orgin: 
+    }
+}
+
+TO Do
+
+eventuellt också muscle title row ska bli sticky med mindre storlek på padding
+
+
+input borde krympa så scorebox får plats brevid. se mindre skärmar.
+
+Try putting the input-score-bar inside spec-input-block
+
+try to fix the filter covering up the input
+spec filter list could go into spec input score bar
+
+rewrite so keyup does some things and change does others.
+-split event listener into to seperate event listeners.
+
+I want to be able to scroll on the filter list or I want it to be shorter in length.
+
+Errors spotted
+- The filter list doesnt get deleted always. Spotted when function and columna unilateral gets added in. Non-reliable replication.
+- the muscle dropdown list goes behind the muscle table titles.
+- art cubiti ( alla delar ) ended up displayed in triceps brachii origin somehow.

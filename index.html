@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anatomi-spel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="skeleton-button">Sklett</button>
+            <div class="dropdown">
+                <button class="drop-button">Muskler</button>
+                <div class="dropdown-content">
+                    <button id="muscle-front-button">Fram</button>
+                    <button id="muscle-back-button">Bak</button>
+                    <button id="muscle-deep-button">Djupa</button>
+                </div>
+            </div>
+            <p id="score">poäng: 0/</p>
+            <button id="reset-button" title="Återställer alla poäng och inställningar.">Återställ</button>
+        </nav>
+    </header>
+    <main>
+        <article class="human-body">
+            <img id="image">
+        </article>
+        <article class="game-section">
+            <section id="blank-names">
+            </section>
+            <section id="latin-names">
+                <input type="text" id="search-box" placeholder="Sök efter namn..">
+            </section>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
