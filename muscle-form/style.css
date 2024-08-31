@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* NAV */
+
+#all-muscles > div {
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    padding: 2px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+#all-muscles > div:hover {
+    background-color: #e7e7e7;
+}
+
+nav > aside > div:last-child {
+    border: solid 1px;
+}
+
+/* FORM */
+
+.muscle-form {
+    width: 378px;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#name {
+    margin: 2em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-bottom: solid;
+}
+
+.muscle-form > div {
+    padding: 20px 52px;
+}
+
+.spec-div > label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spec-div > div, .action-spec > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+#delete-button {
+    background-color: #ff0800;
+    aspect-ratio: 1/1;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#origin {
+    background-color: #bceb87
+}
+
+#attachment {
+    background-color: #b2e2e2;
+}
+
+#action {
+    background-color: #ffbf35;
+}
+
+#action-input {
+    margin-bottom: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+
+footer > * {
+    cursor: pointer;
+}
+
+#download {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+#download:hover {
+    text-decoration: none;
+}
+
+/* OVERLAY BOX */
+
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-div {
+    border: solid black 2px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+}
+
+.info-div > p {
+    padding: 0 1.5rem;
+}
+
+.close-button {
+    align-self: end;
+    display: inline-block;
+    margin: 5px;
+}

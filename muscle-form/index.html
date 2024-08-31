@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON muscle file form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <aside id="all-muscles"></aside>
+    </nav>
+    <main>
+        <form class="muscle-form">
+            <p id="name"></p>
+            <div class="spec-div" id="origin">
+                <label> Ursprung:
+                    <input type="text" id="origin-input" class="muscle-input">
+                </label>
+            </div>
+            <div class="spec-div" id="attachment">
+                <label> Fäste:
+                    <input type="text" id="attachment-input" class="muscle-input">
+                </label>
+            </div>
+            <div class="spec-div" id="action">
+                <label> Funktion:
+                    <input type="text" id="action-input" class="muscle-input">
+                </label>
+            </div>
+        </form>
+        <footer>
+            <a id="download" download="skicka-fil-till-rain" title="Ladda ner alla muskler.">Download Muscle Data</a>
+            <button id="reset-button" title="Återställ all data.">Återställ</button>
+            <button id="info" title="Hur man använder hemsidan.">?</button>
+        </footer> 
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
