@@ -1,15 +1,38 @@
 // todo
 // test naming specs after classes and ids to see the effect on dom with css.
-// add a information button like a question mark to the website.
-// add a confirmation button to reset the data so people dont accidentally reset things.
+// remove doubles of muscles from the document.
 
-// css todo
-// make buttons and links hover a finger
-// hilight links and buttons when hovered over.
+function removeDoubles(arr) {
+    const lowArr = arr.map((value) => value.toLowerCase())
+    const removeArr = []
+    lowArr.forEach((item) => {
+        // remove the item from the arr.
+        const itemRemovedArr = lowArr.toSpliced(lowArr.indexOf(item), 1)
+        itemRemovedArr.forEach((value) => {
+            if (item == value) {
+                removeArr.push(value)
+            }
+        })
+   })
+    return removeArr
+}
+
+function remover(arr, removeArr) {
+    arr.forEach((item) => {
+        removeArr.forEach((value) => {
+            if (item.toLowerCase() == value) {
+                arr.splice(arr.indexOf(item), 1)
+            }
+        })
+    })
+    return arr
+}
+checker = (arr, target) => target.every(v => arr.includes(v));
+
 
 const textInputs = document.querySelectorAll(".muscle-input")
 const saveButton = document.querySelector("#save")
-const allMuscles = ["Adduktorer långa", "Adduktorer korta", "Biceps Brachii", "Erector Spinae", "Extensorer i underarmen", "Flexorer i underarmen", "Gluteus Medius/minimus", "Iliopsoas", "Infraspinatus", "Levator Scapulae", "Pectoralis major", "Pectoralis minor", "Quadratus Lumborum", "Rectus femoris", "Rhombodeii", "Supraspinatus", "Subscapularis", "Teres major", "Teres minor", "Tibialis anterior", "Utåtrotatorer", "Mm. Vastii", "Iliopsoas", "Latissimus Dorsi", "Levator Scapulae", "Rhomboideii", "Trapezius", "Gluteus Maximus", "Gluteus Medius", "Hamstrings", "Quadriceps Femoris", "Tensor Fasciae Latae", "Tibialis Anterior", "Triceps Surae", "Sartorius", "Infraspinatus", "Subscapularis", "Supraspinatus", "Teres Minor", "Teres Major", "Trapezius", "Triceps Brachii", "Triceps Surae", "Deltoideus", "Latissimus Dorsi", "Gluteus Maximus", "Hamstrings", "Pectoralis minor",]
+const allMuscles = ['Adduktorer långa', 'Adduktorer korta', 'Biceps Brachii', 'Erector Spinae', 'Extensorer i underarmen', 'Flexorer i underarmen', 'Gluteus Medius/minimus', 'Iliopsoas', 'Infraspinatus', 'Levator Scapulae', 'Pectoralis major', 'Pectoralis minor', 'Quadratus Lumborum', 'Rectus femoris', 'Rhombodeii', 'Supraspinatus', 'Subscapularis', 'Teres major', 'Teres minor', 'Tibialis anterior', 'Utåtrotatorer', 'Mm. Vastii', 'Latissimus Dorsi', 'Rhomboideii', 'Trapezius', 'Gluteus Maximus', 'Gluteus Medius', 'Hamstrings', 'Quadriceps Femoris', 'Tensor Fasciae Latae', 'Tibialis Anterior', 'Triceps Surae', 'Sartorius', 'Teres Minor', 'Teres Major', 'Triceps Brachii', 'Deltoideus']
 const localMuscleObjArr = JSON.parse(localStorage.getItem("muscleObjArr")) || newMuscleObjArr()
 
 if (!localStorage.muscleObjArr) {
