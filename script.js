@@ -24,7 +24,7 @@ const musclesObjectsArr = [
     {
         "name": "Adduktorer långa",
         "origin": [
-            "ramus superior pubis "
+            "ramus superior pubis"
         ],
         "attachment": [
             "linea aspera "
@@ -182,27 +182,6 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Gluteus Medius/minimus",
-        "origin": [
-            "posteriort på illium mellan linea glutea anterior och linea glutea inferior",
-            "posteriort på illium",
-            "posteriort på ilium",
-            "posteriort på ilium mellan linea glutea anterior och linea glutea inferior"
-        ],
-        "attachment": [
-            "trochanter major"
-        ],
-        "action": {
-            "Höftleden": [
-                "abduktion",
-                "flexion ",
-                "inåtrotation",
-                "extension",
-                "inåtrotation"
-            ]
-        }
-    },
-    {
         "name": "Iliopsoas",
         "origin": [
             "ilium ",
@@ -327,7 +306,7 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Rhombodeii",
+        "name": "Rhomboideii",
         "origin": [
             "processus spinosus c6-c7",
             "processus spinosus th1-th4"
@@ -422,19 +401,7 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Utåtrotatorer",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
         "name": "Mm. Vastii",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Iliopsoas",
         "origin": [],
         "attachment": [],
         "action": {}
@@ -458,18 +425,6 @@ const musclesObjectsArr = [
                 "extension"
             ]
         }
-    },
-    {
-        "name": "Levator Scapulae",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Rhomboideii",
-        "origin": [],
-        "attachment": [],
-        "action": {}
     },
     {
         "name": "Trapezius",
@@ -519,9 +474,23 @@ const musclesObjectsArr = [
     },
     {
         "name": "Gluteus Medius",
-        "origin": [],
-        "attachment": [],
-        "action": {}
+        "origin": [
+            "posteriort på illium mellan linea glutea anterior och linea glutea inferior",
+            "posteriort på illium",
+            "posteriort på ilium",
+            "posteriort på ilium mellan linea glutea anterior och linea glutea inferior"
+        ],
+        "attachment": [
+            "trochanter major"
+        ],
+        "action": {
+            "Höftleden": [
+                "abduktion",
+                "flextion",
+                "inåtrotation",
+                "extension"
+            ]
+        }
     },
     {
         "name": "Hamstrings",
@@ -586,12 +555,6 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Tibialis Anterior",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
         "name": "Triceps Surae",
         "origin": [
             "mediala femurcondylen",
@@ -635,42 +598,6 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Infraspinatus",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Subscapularis",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Supraspinatus",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Teres Minor",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Teres Major",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Trapezius",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
         "name": "Triceps Brachii",
         "origin": [
             "tuberculum infraglenoidale scapulae",
@@ -690,12 +617,6 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Triceps Surae",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
         "name": "Deltoideus",
         "origin": [
             "laterala claculae",
@@ -710,36 +631,12 @@ const musclesObjectsArr = [
                 "abduktion"
             ]
         }
-    },
-    {
-        "name": "Latissimus Dorsi",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Gluteus Maximus",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Hamstrings",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
-        "name": "Pectoralis minor",
-        "origin": [],
-        "attachment": [],
-        "action": {}
     }
 ]
 
 const latinArrObj = { // for the latin names to be displayed depending on what page we selected.
     skeleton: ['Os zygomaticum', 'Processus mastoideus', 'Os mandibularis', 'Processus transversus C1', 'Processus spinosus C2', 'Processus spinosus C7', 'Costa XII', 'Crista iliaca', 'Incisura jugularis', 'Linea alba', 'Processus xiphoideus', 'Linea nuchae superior', 'Protuberantia occipitalis externa', 'Processus coracoideus', 'Spina scapulae', 'Acromion', 'Fossa supraspinata', 'Fossa infraspinata', 'Margo medialis scapulae', 'Margo lateralis scapulae', 'Angulus superior scapulae', 'Angulus inferior scapulae', 'Tuberculum majus humeri', 'Tuberculum minus humeri', 'Sulcus intertubercularis', 'Tuberositas deltoidea', 'Epicondylus lateralis humeri', 'Epicondylus medialis humeri', 'Olecranon', 'Caput radii', 'Processus styloideus radii', 'Processus styloideus ulnae'],
-    musclesFront: ['Adduktorer långa', 'Adduktorer korta', 'Biceps Brachii', 'Erector Spinae', 'Extensorer i underarmen', 'Flexorer i underarmen', 'Gluteus Medius/minimus', 'Iliopsoas', 'Infraspinatus', 'Levator Scapulae', 'Pectoralis major', 'Pectoralis minor', 'Quadratus Lumborum', 'Rectus femoris', 'Rhombodeii', 'Supraspinatus', 'Subscapularis', 'Teres major', 'Teres minor', 'Tibialis anterior', 'Utåtrotatorer', 'Mm. Vastii', 'Latissimus Dorsi', 'Rhomboideii', 'Trapezius', 'Gluteus Maximus', 'Gluteus Medius', 'Hamstrings', 'Quadriceps Femoris', 'Tensor Fasciae Latae', 'Tibialis Anterior', 'Triceps Surae', 'Sartorius', 'Teres Minor', 'Teres Major', 'Triceps Brachii', 'Deltoideus'],
+    musclesFront: ['Adduktorer långa', 'Adduktorer korta', "Infraspinatus", 'Biceps Brachii', 'Erector Spinae', 'Extensorer i underarmen', 'Flexorer i underarmen', 'Iliopsoas', 'Levator Scapulae', 'Pectoralis major', 'Pectoralis minor', 'Quadratus Lumborum', 'Rectus femoris', 'Supraspinatus', 'Subscapularis', 'Teres major', 'Teres minor', 'Tibialis anterior', 'Mm. Vastii', 'Latissimus Dorsi', 'Rhomboideii', 'Trapezius', 'Gluteus Maximus', 'Gluteus Medius', 'Hamstrings', 'Quadriceps Femoris', 'Tensor Fasciae Latae', 'Triceps Surae', 'Sartorius', 'Triceps Brachii', 'Deltoideus'],
     musclesBack: [],
     musclesDeep: [],
 }
