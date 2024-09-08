@@ -1,14 +1,6 @@
-// plan is att ha flikar ovanför latin names som man kan klicka i för att fylla i ytterligare info på ursprung, fäste och funktion.
-//Ändra så när man trycker på muskler så tömmer den alla rader och fyller latin namn med muskler.
-// i muskler vill jag att man ska kunna fylla i ursprung, fäste och syfte.
-
-// sparar när man växlar mellan muskler och sklett
-// sparar ens framsteg
-// behåller datan i webcache
-
-// en till flik med tabell och lista. 
-// Tabellen gör att man kan koppla på ursprung, fäste och funktioner på musklerna.
-// listan är över alla alternativ man kan välja
+// TODO
+// action spec - the plus doesnt dissapear even though its all filled out.
+// sort the search list array in alphabetical order.
 
 // klickar du på en tom blank utan att ha valt latin namn kan du skriva in namnet och den blir grön när det ör rätt.
 // den blir röd när du klickar av och det finns text men texten är fel.
@@ -16,8 +8,6 @@
 // om du skriver 1 ( etta ) i sökrutan dyker adduktorer korta ( plats 1 ) upp direkt.
 
 // wikipedia link direkt till varje latinska namn som man kan klicka på när man musar över namnet.
-
-// learn how to import
 
 // the muscles should apear in the same order as they are listed in the picture.
 const musclesObjectsArr = [
@@ -660,7 +650,7 @@ loadPage(currentPage)
 loadScore(latinArrObj) // do this once when the page loads. // count all the latin names and the score.
 
 searchBox.addEventListener("keyup", findSearchMatches)
-resetButton.addEventListener("click", resetData)
+resetButton.addEventListener("click", confirmReset)
 skeletonButton.addEventListener("click", function loadThePage() {
     loadPage("skeleton")
 })
@@ -1000,13 +990,6 @@ function findSearchMatches() {
             currentLatin.style.display = ""
         }
     }
-}
-
-function resetData() {
-    //reset the web storage
-    localStorage.clear();
-    // refresh page.
-    location.reload();
 }
 
 function regexpRemoveWhiteSpaces(text) {
@@ -1722,5 +1705,45 @@ function deleteSpecInputBlocks() {
     }
     if (specFilterDiv) {
         specFilterDiv.remove()
+    }
+}
+
+function confirmReset() {
+    // add a textbox saying confirm reset?
+    // if yes gets clicked then delete data and refresh the page.
+    const backDrop = document.createElement("div")
+    backDrop.classList.add("backdrop")
+    const infoDiv = document.createElement("div")
+    infoDiv.classList.add("info-div")
+    backDrop.appendChild(infoDiv)
+    const closeButton = document.createElement("a")
+    closeButton.innerText = "X"
+    closeButton.id = "delete-button"
+    closeButton.classList.add("close-button")
+    infoDiv.appendChild(closeButton)
+    closeButton.addEventListener("click", (e) => {
+        backDrop.remove()
+    })
+    const confirmDiv = document.createElement("div")
+    confirmDiv.style.padding = "1.5rem"
+    infoDiv.appendChild(confirmDiv)
+    const confirmText = document.createElement("p")
+    confirmText.innerText = 
+    `Är du säker på att du vill återställa hemsidan?
+    Detta kommer radera all ifylld data.`
+    confirmDiv.appendChild(confirmText)
+    const resetButton = document.createElement("button")
+    resetButton.innerText = "Ja"
+    resetButton.addEventListener("click", (e) => {
+        resetData()
+    })
+    confirmDiv.appendChild(resetButton)
+    document.body.appendChild(backDrop)
+
+    function resetData() {
+        //reset the web storage
+        localStorage.clear();
+        // refresh page.
+        location.reload();
     }
 }

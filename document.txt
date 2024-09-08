@@ -1,7 +1,3 @@
-we need deep muscles, shallow muscles, skeleton and where muscles originate and attach.
-
-Learn how to import files because this is so big and a mess.
-
 const musclesObjectsArr = [
     // the muscles should apear in the same order as they are listed in the picture.
     {
@@ -90,29 +86,12 @@ Vad är ligament? tendons på engelska. Achillies tendon.
 Insikter
 C1 syns inte på sklettbilden. Kanske att vi tar en förtydligande bild och redigerar in den i sklettets sida.
 
-write and read this.
-muscle table {
-    triceps: {
-        orgin: 
-    }
-}
-
 TO Do
 
 eventuellt också muscle title row ska bli sticky med mindre storlek på padding
 
 
 input borde krympa så scorebox får plats brevid. se mindre skärmar.
-
-Try putting the input-score-bar inside spec-input-block
-
-try to fix the filter covering up the input
-spec filter list could go into spec input score bar
-
-rewrite so keyup does some things and change does others.
--split event listener into to seperate event listeners.
-
-I want to be able to scroll on the filter list or I want it to be shorter in length.
 
 Errors spotted
 - The filter list doesnt get deleted always. Spotted when function and columna unilateral gets added in. Non-reliable replication.
