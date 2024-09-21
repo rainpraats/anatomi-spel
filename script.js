@@ -1,15 +1,13 @@
 // TODO
 // action spec - the plus doesnt dissapear even though its all filled out.
 // sort the search list array in alphabetical order.
+// in the game when muscle is clicked and highlighted and a blank is hovered over then hilight the blank and make cursior a pointer.
 
 // klickar du på en tom blank utan att ha valt latin namn kan du skriva in namnet och den blir grön när det ör rätt.
 // den blir röd när du klickar av och det finns text men texten är fel.
 
-// om du skriver 1 ( etta ) i sökrutan dyker adduktorer korta ( plats 1 ) upp direkt.
-
 // wikipedia link direkt till varje latinska namn som man kan klicka på när man musar över namnet.
 
-// the muscles should apear in the same order as they are listed in the picture.
 const musclesObjectsArr = [
     {
         "name": "Adduktorer långa",
@@ -625,6 +623,7 @@ const musclesObjectsArr = [
 ]
 
 const latinArrObj = { // for the latin names to be displayed depending on what page we selected.
+    // the latin names get displayed in the game, in the order assigned here.
     skeleton: ['Os zygomaticum', 'Processus mastoideus', 'Os mandibularis', 'Processus transversus C1', 'Processus spinosus C2', 'Processus spinosus C7', 'Costa XII', 'Crista iliaca', 'Incisura jugularis', 'Linea alba', 'Processus xiphoideus', 'Linea nuchae superior', 'Protuberantia occipitalis externa', 'Processus coracoideus', 'Spina scapulae', 'Acromion', 'Fossa supraspinata', 'Fossa infraspinata', 'Margo medialis scapulae', 'Margo lateralis scapulae', 'Angulus superior scapulae', 'Angulus inferior scapulae', 'Tuberculum majus humeri', 'Tuberculum minus humeri', 'Sulcus intertubercularis', 'Tuberositas deltoidea', 'Epicondylus lateralis humeri', 'Epicondylus medialis humeri', 'Olecranon', 'Caput radii', 'Processus styloideus radii', 'Processus styloideus ulnae'],
     musclesFront: ['Adduktorer långa', 'Adduktorer korta', "Infraspinatus", 'Biceps Brachii', 'Erector Spinae', 'Extensorer i underarmen', 'Flexorer i underarmen', 'Iliopsoas', 'Levator Scapulae', 'Pectoralis major', 'Pectoralis minor', 'Quadratus Lumborum', 'Rectus femoris', 'Supraspinatus', 'Subscapularis', 'Teres major', 'Teres minor', 'Tibialis anterior', 'Mm. Vastii', 'Latissimus Dorsi', 'Rhomboideii', 'Trapezius', 'Gluteus Maximus', 'Gluteus Medius', 'Hamstrings', 'Quadriceps Femoris', 'Tensor Fasciae Latae', 'Triceps Surae', 'Sartorius', 'Triceps Brachii', 'Deltoideus'],
     musclesBack: [],
