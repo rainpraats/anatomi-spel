@@ -12,7 +12,7 @@ const musclesObjectsArr = [
     {
         "name": "Adduktorer långa",
         "origin": [
-            "ramus superior pubis"
+            "ramus superior på pubis"
         ],
         "attachment": [
             "linea aspera "
@@ -67,18 +67,16 @@ const musclesObjectsArr = [
             "os sacrum",
             "crista illiaca",
             "processus spinosus",
-            "iliocostalis lumborum",
             "iliocostalis lumborum:",
-            "6 nedre revben till 6 övre",
             "från 6 nedre revbenen till 6 övre",
             "costae 6-3",
-            "l!-l5",
             "processus transversus th7-th12",
             "processus transversus th1-th6",
             "processus transversus th3-th5 och c5-c7",
             "processus spinosus th3-th5",
             "processus spinosus c4-c7 och th1-th3",
-            "l1-l5"
+            "l1-l5",
+            "l1"
         ],
         "attachment": [
             "costae 5-12",
@@ -116,7 +114,6 @@ const musclesObjectsArr = [
             "bas på metacarpalben 3 dorsalt",
             "bas på metacarpalben 2 dorsalt",
             "bas på distala falanx 2-5",
-            "bas på distala falanx 2 till 5",
             "dorsalaponeurosen på falanx 5 ",
             "bas av metacarpalben 5 dorsalt"
         ],
@@ -159,8 +156,9 @@ const musclesObjectsArr = [
                 "palmarflexion och radialdeviation",
                 "palmarflexion och ulnardeviation",
                 "spänner palmaraponeurosen",
-                "flexion av phalanx 2-5",
-                "flexion av pollux"
+                "radialdeviation",
+                "ulnardeviation",
+                "palmarflexion"
             ],
             "Armbågen": [
                 "lite flexion och pronation",
@@ -174,7 +172,6 @@ const musclesObjectsArr = [
         "origin": [
             "ilium ",
             "th12-l1-l4",
-            "processus transverses ",
             "processus transversus l1-l5"
         ],
         "attachment": [
@@ -184,7 +181,6 @@ const musclesObjectsArr = [
             "Höftleden": [
                 "flexion",
                 "utåtrotation",
-                "inåtrotation",
                 "inåtrotation"
             ],
             "Bål": [
@@ -294,26 +290,6 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Rhomboideii",
-        "origin": [
-            "processus spinosus c6-c7",
-            "processus spinosus th1-th4"
-        ],
-        "attachment": [
-            "margo medialis scapulae "
-        ],
-        "action": {
-            "Scapulae": [
-                "retraktion",
-                "inåtrotation",
-                "stabilisering "
-            ],
-            "thorax": [
-                "pressas mot scapulae"
-            ]
-        }
-    },
-    {
         "name": "Supraspinatus",
         "origin": [
             "fossa supraspinata"
@@ -389,12 +365,6 @@ const musclesObjectsArr = [
         }
     },
     {
-        "name": "Mm. Vastii",
-        "origin": [],
-        "attachment": [],
-        "action": {}
-    },
-    {
         "name": "Latissimus Dorsi",
         "origin": [
             "via thoracolumbalfascian från processus spinosus th7-th12,l1-l5,costae 9-12 och crista iliaca"
@@ -411,6 +381,26 @@ const musclesObjectsArr = [
                 "adduktion vid adducerat läge",
                 "inåtrotation",
                 "extension"
+            ]
+        }
+    },
+    {
+        "name": "Rhomboideii",
+        "origin": [
+            "processus spinosus c6-c7",
+            "processus spinosus th1-th4"
+        ],
+        "attachment": [
+            "margo medialis scapulae "
+        ],
+        "action": {
+            "Scapulae": [
+                "retraktion",
+                "inåtrotation",
+                "stabilisering "
+            ],
+            "thorax": [
+                "pressas mot scapulae"
             ]
         }
     },
@@ -442,7 +432,6 @@ const musclesObjectsArr = [
         "name": "Gluteus Maximus",
         "origin": [
             "spina iliaca posterior superior",
-            "lateralt på scarum",
             "lateralt på sacrum",
             "coccygis"
         ],
@@ -463,8 +452,6 @@ const musclesObjectsArr = [
     {
         "name": "Gluteus Medius",
         "origin": [
-            "posteriort på illium mellan linea glutea anterior och linea glutea inferior",
-            "posteriort på illium",
             "posteriort på ilium",
             "posteriort på ilium mellan linea glutea anterior och linea glutea inferior"
         ],
@@ -625,7 +612,7 @@ const musclesObjectsArr = [
 const latinArrObj = { // for the latin names to be displayed depending on what page we selected.
     // the latin names get displayed in the game, in the order assigned here.
     skeleton: ['Os zygomaticum', 'Processus mastoideus', 'Os mandibularis', 'Processus transversus C1', 'Processus spinosus C2', 'Processus spinosus C7', 'Costa XII', 'Crista iliaca', 'Incisura jugularis', 'Linea alba', 'Processus xiphoideus', 'Linea nuchae superior', 'Protuberantia occipitalis externa', 'Processus coracoideus', 'Spina scapulae', 'Acromion', 'Fossa supraspinata', 'Fossa infraspinata', 'Margo medialis scapulae', 'Margo lateralis scapulae', 'Angulus superior scapulae', 'Angulus inferior scapulae', 'Tuberculum majus humeri', 'Tuberculum minus humeri', 'Sulcus intertubercularis', 'Tuberositas deltoidea', 'Epicondylus lateralis humeri', 'Epicondylus medialis humeri', 'Olecranon', 'Caput radii', 'Processus styloideus radii', 'Processus styloideus ulnae'],
-    musclesFront: ['Adduktorer långa', 'Adduktorer korta', "Infraspinatus", 'Biceps Brachii', 'Erector Spinae', 'Extensorer i underarmen', 'Flexorer i underarmen', 'Iliopsoas', 'Levator Scapulae', 'Pectoralis major', 'Pectoralis minor', 'Quadratus Lumborum', 'Rectus femoris', 'Supraspinatus', 'Subscapularis', 'Teres major', 'Teres minor', 'Tibialis anterior', 'Mm. Vastii', 'Latissimus Dorsi', 'Rhomboideii', 'Trapezius', 'Gluteus Maximus', 'Gluteus Medius', 'Hamstrings', 'Quadriceps Femoris', 'Tensor Fasciae Latae', 'Triceps Surae', 'Sartorius', 'Triceps Brachii', 'Deltoideus'],
+    musclesFront: ['Adduktorer långa', 'Adduktorer korta', "Infraspinatus", 'Biceps Brachii', 'Erector Spinae', 'Extensorer i underarmen', 'Flexorer i underarmen', 'Iliopsoas', 'Levator Scapulae', 'Pectoralis major', 'Pectoralis minor', 'Quadratus Lumborum', 'Rectus femoris', 'Supraspinatus', 'Subscapularis', 'Teres major', 'Teres minor', 'Tibialis anterior', 'Latissimus Dorsi', 'Rhomboideii', 'Trapezius', 'Gluteus Maximus', 'Gluteus Medius', 'Hamstrings', 'Quadriceps Femoris', 'Tensor Fasciae Latae', 'Triceps Surae', 'Sartorius', 'Triceps Brachii', 'Deltoideus'],
     musclesBack: [],
     musclesDeep: [],
 }
