@@ -767,7 +767,7 @@ function loadPage(pageName) {
     // update localStorage currentPage
     localStorage.setItem("currentPage", currentPage)
 
-    let counter = 1;
+    let counter = 1; // assigns numbers to each muscle.
 
     const latinNameDivs = document.querySelectorAll("#latin-names div");
     const blankNameDivs = document.querySelectorAll("#blank-names div");
